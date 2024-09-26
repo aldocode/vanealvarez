@@ -1,0 +1,50 @@
+/* Establecemos el color de fondo y el padding, y la imagen de fondo en formato jpg */
+.header {
+  background-color: rgb(50, 167, 60);
+  padding: 1rem 0 3rem 0;
+
+  &.inicio {
+    background-position: center center;
+    background-size: cover;
+
+    @include tablet {
+      min-height: 70rem;
+    }
+
+    .contenido-header {
+      @include tablet {
+        min-height: 40rem;
+      }
+    }
+  }
+}
+
+.inicio {
+  padding: 1rem 0 3rem 0;
+  background-image: url(/../build/img/gdl.jpg);
+  background-color: rgba(0, 0, 0, 3);
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  font-weight: bold; /* Color negro semitransparente */
+}
+
+/* Establecemos la imagen de fondo en formato webp para los navegadores compatibles */
+.webp .inicio {
+  background-image: url(/../build/img/gdl.webp);
+}
+
+.contenido-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  h1 {
+    color: rgb(255, 255, 255);
+    font-weight: bold; /* Hacer el texto en negrita */
+    justify-content: center;
+  }
+}

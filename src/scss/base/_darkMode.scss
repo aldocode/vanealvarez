@@ -1,0 +1,79 @@
+.dark-mode {
+  .dark-mode-boton {
+    width: 3rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    filter: invert(100%);
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  background-color: darken($grisOscuro, 10);
+
+  p {
+    color: $blanco;
+  }
+
+  a,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: $gris;
+  }
+
+  .anuncio {
+    background-color: $grisOscuro;
+
+    .icono {
+      filter: invert(100%);
+    }
+  }
+
+  .resumen-propiedad {
+    .precio {
+      color: $verde;
+    }
+
+    .icono {
+      filter: invert(100%);
+    }
+
+    p {
+      color: $blanco;
+    }
+  }
+
+  .contenido-anuncio {
+    h3 {
+      color: $verde;
+    }
+
+    p {
+      color: $blanco;
+    }
+  }
+
+  .texto-nosotros blockquote {
+    color: $blanco;
+  }
+
+  .formulario {
+    label,
+    legend,
+    p {
+      color: $blanco;
+    }
+
+    input:not([type="submit"]),
+    textarea {
+      background-color: $grisOscuro;
+      color: $blanco;
+      border: none;
+    }
+  }
+}

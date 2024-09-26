@@ -1,0 +1,27 @@
+.testimonial {
+  position: relative; // Añade esta línea para posicionar el pseudo-elemento en relación a este contenedor
+  background-color: rgb(50, 167, 60);
+  font-size: 2.4rem;
+  padding: 2rem;
+  border-radius: 10px;
+  color: white;
+
+  &::before {
+    content: url("/build/img/comilla.svg");
+    display: block;
+    position: absolute; // Cambia a posición absoluta
+    top: 10px; // Ajusta según sea necesario
+    left: 10px; // Ajusta según sea necesario
+    width: 50px;
+    height: 50px;
+  }
+}
+
+blockquote {
+  padding-left: 3rem;
+}
+
+.testimonial p {
+  color: white;
+  text-align: right;
+}

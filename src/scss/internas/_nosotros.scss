@@ -1,0 +1,17 @@
+.contenido-nosotros {
+  @include tablet {
+    @include grid(2, 2rem);
+  }
+
+  img {
+    max-width: 600px;
+  } // Add a closing curly brace here
+}
+
+.texto-nosotros blockquote {
+  font-weight: $black;
+  color: $verde;
+  font-size: 4rem;
+  margin: 3rem 0 0 0;
+  padding: 0;
+}
